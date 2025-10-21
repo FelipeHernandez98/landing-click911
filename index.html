@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <title>Click911 | Ambulancias en segundos</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- 🔴 Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <img src="assets/logo2.png" alt="Logo Click911" class="logo" />
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#problema">Problema</a></li>
+          <li><a href="#solucion">Solución</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🏠 Hero -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <h1>Solicita una ambulancia en segundos</h1>
+      <p>Click911 conecta usuarios y ambulancias en tiempo real, sin llamadas ni demoras.</p>
+      <div class="hero-buttons">
+        <a href="#video" class="btn primary">Como hacerlo</a>
+        <a href="#contacto" class="btn secondary">Contáctanos</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <!-- 📱 Aquí puedes poner una imagen de tu app -->
+      <img src="assets/app-logo-fondo.png" alt="App Click911" class="app-logo" />
+    </div>
+  </section>
+
+  <!-- ⚠️ Problema -->
+  <section id="problema" class="section">
+    <div class="container">
+      <h2>El problema</h2>
+      <p>
+        Hoy en día, cuando una persona necesita una ambulancia se enfrenta a múltiples dificultades:
+      </p>
+
+      <ul class="problem-list">
+        <li>🚨 No existe un número único y centralizado para solicitar el servicio.</li>
+        <li>📞 El contacto no es directo con la ambulancia, sino que la llamada pasa por varias personas, retrasando la atención.</li>
+        <li>❓ Los usuarios no tienen certeza de si realmente viene una ambulancia ni cuánto tardará en llegar.</li>
+        <li>📍 Dar la ubicación exacta es complicado, lo que genera pérdida de tiempo valioso.</li>
+        <li>🚑 Varias ambulancias se desplazan al mismo lugar sin coordinación, haciendo ineficiente el servicio.</li>
+      </ul>
+
+      <p class="problem-result">
+        El resultado: <strong>demoras críticas que ponen en riesgo la vida de los pacientes</strong> y <strong>pérdidas operativas para las empresas de ambulancias.</strong>
+      </p>
+
+      <img src="assets/ambulance-logo.png" alt="Problema al pedir ambulancia" class="section-image" />
+    </div>
+  </section>
+
+
+  <!-- 💡 Solución -->
+  <section id="solucion" class="section dark">
+    <div class="container">
+      <h2>La solución</h2>
+      <p>
+        Con Click911 puedes solicitar una ambulancia con solo un clic. 
+        La app conecta directamente con ambulancias cercanas y te permite ver su ubicación en tiempo real.
+      </p>
+      <div id="video" class="video-container">
+        <!-- 🎥 Aquí insertas tu video explicativo -->
+        <video controls poster="assets/preview.png">
+          <source src="assets/SimulaciónEmergencia.mp4" type="video/mp4" />
+          Tu navegador no soporta el video.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📞 Contacto -->
+  <section id="contacto" class="section">
+    <div class="container">
+      <h2>Contáctanos</h2>
+      <p>¿Eres empresa de ambulancias o inversionista interesado en el proyecto? Escríbenos:</p>
+      <form class="contact-form">
+        <input type="text" placeholder="Tu nombre" required />
+        <input type="email" placeholder="Tu correo" required />
+        <textarea placeholder="Tu mensaje" required></textarea>
+        <button type="submit" class="btn primary">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ⚫ Footer -->
+  <footer class="footer">
+    <p>© 2025 Click911. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

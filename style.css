@@ -1,0 +1,261 @@
+/* --- Reset y fuentes --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  color: #111;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* --- Header --- */
+.header {
+  background: #1d1c1c;
+  color: white;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+}
+
+.app-logo {
+  width: 500px; /* antes podía estar en 300px o similar */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.app-logo:hover {
+  transform: rotate(-10deg) scale(1.05);
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff2e2e;
+}
+
+/* --- Hero --- */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 120px 0 60px;
+  background: linear-gradient(120deg, #000, #ff2e2e);
+  color: white;
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 280px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn.primary {
+  background: white;
+  color: #000;
+}
+
+.btn.primary:hover {
+  background: #ff2e2e;
+  color: white;
+}
+
+.btn.secondary {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn.secondary:hover {
+  background: white;
+  color: #000;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+/* --- Secciones --- */
+.section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+#problema {
+  background-color: #f8f9fa;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#problema h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #d32f2f;
+}
+
+#problema p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.problem-list {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  text-align: left;
+}
+
+.problem-list li {
+  background: #fff;
+  padding: 12px 16px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  font-size: 1rem;
+}
+
+.problem-result {
+  font-size: 1.1rem;
+  color: #222;
+  margin-top: 30px;
+  font-weight: 500;
+}
+
+.section-image {
+  margin-top: 40px;
+  max-width: 300px;
+  opacity: 0.9;
+}
+
+
+/* --- Solución (modo oscuro) --- */
+.dark {
+  background: #111;
+  color: white;
+}
+
+.video-container {
+  margin-top: 30px;
+}
+
+.video-container video {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+/* --- Contacto --- */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 30px auto 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: none;
+}
+
+.contact-form button {
+  background: #ff2e2e;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #000;
+}
+
+/* --- Footer --- */
+.footer {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  margin-top: 60px;
+}
