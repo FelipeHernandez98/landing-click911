@@ -88,10 +88,10 @@
     <div class="container">
       <h2>Contáctanos</h2>
       <p>¿Eres empresa de ambulancias o inversionista interesado en el proyecto? Escríbenos:</p>
-      <form class="contact-form">
-        <input type="text" placeholder="Tu nombre" required />
-        <input type="email" placeholder="Tu correo" required />
-        <textarea placeholder="Tu mensaje" required></textarea>
+      <form class="contact-form" action="https://formspree.io/f/xldpkvvk" method="post">
+        <input type="text" name="nombre" placeholder="Tu nombre" required />
+        <input type="email" name="correo" placeholder="Tu correo" required />
+        <textarea name="message" placeholder="Tu mensaje" required></textarea>
         <button type="submit" class="btn primary">Enviar</button>
       </form>
     </div>
